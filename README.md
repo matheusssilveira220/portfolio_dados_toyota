@@ -3,7 +3,7 @@
 # Toyota Prices
 
 ## Introdução
-O objetivo deste projeto é criar e analisar gráficos XMR para identificar padrões de desempenho e apresentá-los em um dashboard interativo.
+O objetivo deste projeto é criar e analisar um Gráfico de Controle para identificar padrões de desempenho e apresentá-los em um dashboard interativo.
 
 ## Resumo
 
