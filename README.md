@@ -2,6 +2,11 @@
 ---
 # Toyota Prices
 
+## Introdução
+O objetivo deste projeto é criar e analisar gráficos XMR para identificar padrões de desempenho e apresentá-los em um dashboard interativo.
+
+## Resumo
+
 Nesse projeto fiz a análise historica do valor das ações da Toyota de 1980 a 2022.
 
 Utilizei Python para extrair os dados da WEB utilizando API, fiz o tratamento dos dados e importei ao PostgreSQL.
