@@ -16,3 +16,5 @@ No PostgreSQL, foram realizadas as consultas utilizando SQL, a projeção inicia
 A visualização foi gerada utilizando o PowerBI.
 
 O fluxo do trabalho pode ser acompanhado no arquivo [fluxo_toyota](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/fluxo_toyota_0.2.pdf) e o escopo do projeto estará no arquivo [escopo_toyota](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/escopo_toyota.pdf).
+
+Os objetivos, juntando o fluxo + escopo, estão no arquivo [objetivos_toyota](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/objetivos_toyota.pdf).
