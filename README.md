@@ -1,6 +1,6 @@
 # Toyota Prices
 
-Nesse projeto fiz a análise do histórico do valor das ações da Toyota de 1980 a 2022.
+Nesse projeto fiz a análise historica do valor das ações da Toyota de 1980 a 2022.
 
 Utilizei Python para extrair os dados da WEB utilizando API, fiz o tratamento dos dados e importei ao PostgreSQL.
 
