@@ -7,3 +7,5 @@ Utilizei Python para extrair os dados da WEB utilizando API, fiz o tratamento do
 No PostgreSQL, foram realizadas as consultas utilizando SQL, a projeção inicial e a Query especifica para gerar a visualização desejada.
 
 A visualização foi gerada utilizando o PowerBI.
+
+O fluxo do trabalho pode ser acompanhado no arquivo (fluxo_toyota)[https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/fluxo_toyota_0.2.pdf]
