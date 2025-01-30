@@ -5,7 +5,66 @@
 ## Introdução
 O objetivo deste projeto é criar e analisar um Gráfico de Controle para identificar padrões de desempenho e apresentá-los em um dashboard interativo.
 
-## Resumo
+## Como rodar o projeto
+
+### Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+
+Python 3.8+
+
+PostgreSQL
+
+Power BI
+
+Jupyter Notebook
+
+Git
+
+### Clonar o repositório
+
+git clone https://github.com/matheusssilveira220/portfolio_dados_toyota.git
+cd portfolio_dados_toyota
+
+### Criar e Ativar um Ambiente Virtual (Opcional, mas Recomendado)
+
+pip install -r requirements.txt
+
+### Configurar o Banco de Dados
+
+Certifique-se de que o PostgreSQL está rodando na sua máquina ou em um servidor remoto.
+Crie um banco de dados chamado toyota_db (ou outro de sua escolha).
+Configure as credenciais no arquivo .env:
+
+user=seu_usuario
+
+password=sua_senha
+
+host=localhost
+
+port=5432
+
+dbname=toyota_db
+
+### Rode as migrações para criar a tabela necessária
+
+```sql
+CREATE TABLE toyota_stock (
+    data DATE,
+    fechamento_ajustado FLOAT,
+    fechamento FLOAT,
+    alta FLOAT,
+    baixa FLOAT,
+    abertura FLOAT,
+    volume INT
+);
+```
+
+### Rodar o Código
+
+python toyota.py
+
+# Resumo
 
 Nesse projeto fiz a análise historica do valor das ações da Toyota de 1980 a 2022.
 
@@ -24,6 +83,8 @@ Os objetivos, juntando o fluxo + escopo, estão no arquivo [objetivos_toyota](ht
 ### Python
 
 Fiz a coleta dos dados utilizando o API do Kaggle, após isso realizei a análise exploratoria e o tratamento nos dados. Com isso chegava a etapa de conectar ao banco de dados, fiz isso utilizando a biblioteca **sqlalchemy**, biblioteca voltada a integração de Python - SQL. A própria plataforma da **Supabase** nos oferece os codigos necessários para realizar essa importação dos dados ao banco de dados.
+
+No arquivo [toyota](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/toyota.ipynb) vocês encontram os notebooks criados utilizando o **JupyterLab**.
 
 ### SQL
 
