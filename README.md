@@ -23,7 +23,7 @@ Os objetivos, juntando o fluxo + escopo, estão no arquivo [objetivos_toyota](ht
 
 ### Python
 
-Fiz a coleta dos dados utilizando o API do Kaggle, após isso realizei a análise exploratoria e o tratamento nos dados. Com isso chegava a etapa de conectar ao banco de dados, fiz isso utilizando a biblioteca **sqlalchemy**, biblioteca voltada a integração de Python - SQL.
+Fiz a coleta dos dados utilizando o API do Kaggle, após isso realizei a análise exploratoria e o tratamento nos dados. Com isso chegava a etapa de conectar ao banco de dados, fiz isso utilizando a biblioteca **sqlalchemy**, biblioteca voltada a integração de Python - SQL. A própria plataforma da **Supabase** nos oferece os codigos necessários para realizar essa importação dos dados ao banco de dados.
 
 ### SQL
 
