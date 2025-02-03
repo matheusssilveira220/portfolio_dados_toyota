@@ -13,40 +13,40 @@ Link do Kaggle: [Toyota Motors Stock Data (1980-2024)](https://www.kaggle.com/da
 
 Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
-Python 3.8+
+- Python 3.8+
 
-PostgreSQL
+- PostgreSQL
 
-Power BI
+- Power BI
 
-Jupyter Notebook
+- Jupyter Notebook
 
-Git
+- Git
 
 ### Clonar o repositório
-
+```
 git clone https://github.com/matheusssilveira220/portfolio_dados_toyota.git
 cd portfolio_dados_toyota
-
+```
 ### Criar e Ativar um Ambiente Virtual (Opcional, mas Recomendado)
-
+```
 pip install -r requirements.txt
-
+```
 ### Configurar o Banco de Dados
 
 Certifique-se de que o PostgreSQL está rodando na sua máquina ou em um servidor remoto.
 Crie um banco de dados chamado toyota_db (ou outro de sua escolha).
 Configure as credenciais no arquivo .env:
 
-user=seu_usuario
+- user=seu_usuario
 
-password=sua_senha
+- password=sua_senha
 
-host=localhost
+- host=localhost
 
-port=5432
+- port=5432
 
-dbname=toyota_db
+- dbname=toyota_db
 
 ### Rode as migrações para criar a tabela necessária
 
@@ -63,9 +63,9 @@ CREATE TABLE toyota_stock (
 ```
 
 ### Rodar o Código
-
+```
 python toyota.py
-
+```
 # Resumo
 
 Nesse projeto fiz a análise historica do valor das ações da Toyota de 1980 a 2022.
