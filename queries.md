@@ -1,3 +1,8 @@
+# Query
+Nessa query busco criar os dados para montar o gráfico de controle referente aos valores de Alta do período.
+
+Farei a mesma query com cada indicador, para entendermos o comportamento dos dados.
+
 ```sql
 CREATE VIEW toyota_grafico_controle AS
 -- CTE onde agrupo os dados mensais e calculo a soma dos valores da coluna.
