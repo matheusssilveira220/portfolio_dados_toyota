@@ -37,17 +37,13 @@ pip install -r requirements.txt
 Certifique-se de que o PostgreSQL está rodando na sua máquina ou em um servidor remoto.
 Crie um banco de dados chamado toyota_db (ou outro de sua escolha).
 Configure as credenciais no arquivo .env:
-
-- user=seu_usuario
-
-- password=sua_senha
-
-- host=localhost
-
-- port=5432
-
-- dbname=toyota_db
-
+```
+user=seu_usuario
+password=sua_senha
+host=localhost
+port=5432
+dbname=toyota_db
+```
 ### Rode as migrações para criar a tabela necessária
 
 ```sql
