@@ -1,13 +1,10 @@
 # Query
-Nessa query busco criar os dados para montar o gráfico de controle referente aos valores de Alta e Baixa do período, encontrando o percentual de alteração entre eles.
-
-Foi realizado uma query dessa para cana ano até 2014. Após o periodo de 2014 foi realizada uma query contendo o periodo de 1980 até 2013, de forma apenas onde apresenta os dados. 
-
-Os dados que usaremos para nossa análise serão principalmente os do período de 2014 a 2024
+## Gráfico de Controle
+Nessa query busco montar o gráfico de controle referente aos valores de Alta e Baixa do período de 2024 a 2020, encontrando o percentual de alteração entre eles. 
 
 
 ```sql
-CREATE VIEW toyota_grafico_2024_controle AS
+CREATE VIEW toyota_grafico_controle_controle AS
 -- CTE onde agrupo os dados mensais e calculo a soma dos valores da coluna.
 WITH 
 metrica AS (
@@ -16,7 +13,7 @@ metrica AS (
     sum(round(alta::numeric, 2)) AS alta_total,
     sum(round(baixa::numeric, 2)) AS baixa_total
   FROM toyota_stock
-  WHERE EXTRACT (YEAR FROM data) = 2024
+  WHERE EXTRACT (YEAR FROM data) >= 2020 
   GROUP BY 1
   ORDER BY 1
 ),
@@ -64,4 +61,34 @@ FROM amplitudes a
 CROSS JOIN limites l
 CROSS JOIN medias m
 ORDER BY a.dt;
+```
+## Performance Anual e Mensal
+A intensão dessa query é encontrar anos e meses com positividade e negatividade, considerando o fechamento, ou seja caso fechamento > fechamento anterior = 1. Dessa forma conseguimos encontrar os anos e meses com maior taxa de positividade de um periodo ao outro. A query é a mesma nos dois casos, apenas alterar MONTH por YEAR e mes por ano.
+
+```sql
+WITH dados AS (
+    SELECT 
+        data,
+        fechamento,
+        LAG(fechamento) OVER (ORDER BY data) AS lag_fechamento,
+        EXTRACT(month FROM data) AS mes -->Altere month para year, e tera o resultado anual, o Alias é interessante mudar para ano
+    FROM toyota_stock
+),
+contagem_dias AS (
+    SELECT 
+        mes, --> Alterar para ano
+        data,
+        fechamento,
+        CASE WHEN fechamento > lag_fechamento THEN 1 ELSE 0 END AS alta,
+        CASE WHEN fechamento < lag_fechamento THEN 1 ELSE 0 END AS baixa
+    FROM dados
+)
+SELECT 
+    mes, --> Alterar para ano
+    SUM(alta) AS total_dias_alta,
+    SUM(baixa) AS total_dias_baixa,
+    CASE WHEN SUM(alta) > SUM(baixa) THEN 'Positivo' ELSE 'Negativo' END AS positivo_negativo
+FROM contagem_dias
+GROUP BY mes --> Alterar para ano
+ORDER BY mes; --> Alterar para ano
 ```
