@@ -102,6 +102,6 @@ No arquivo [toyota](https://github.com/matheusssilveira220/portfolio_dados_toyot
 
 Utilizei a plataforma da **Supabase** para hospedagem do meu banco de dados, com a ferramenta **DBeaver** como ferramenta visual para operarmos as queries futuramente. O SGBD que utilizei é o **PostgreSQL**. Dessa forma tenho todo suporte necessário para começar minhas análises dentro do SQL.
 
-### PowerBI <img alt="[PowerBI]" height="[Height]" width="[Width]" src="https://github.com/gui-bus/TechIcons/blob/main/[Theme]/[Icon].svg">
+### PowerBI <img alt="PowerBI" height="[Height]" width="[Width]" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Power%20BI.svg">
 
 O [Dashboard PowerBI](https://app.powerbi.com/view?r=eyJrIjoiNWY1ZjAwZDktMDA3MC00OTUwLThiZDgtNjc0NGMyMzY1NzQyIiwidCI6IjljMTdjMzNhLWJhMGItNDM0MS04ZjI5LTZjYWVkYjAxN2NhMyJ9&pageName=a246d69471eb9602b248) pode ser visto nesse link destacado.
