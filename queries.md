@@ -99,3 +99,36 @@ FROM contagem_dias
 GROUP BY mes --> Alterar para ano
 ORDER BY mes; --> Alterar para ano
 ```
+## Máximos e Mínimos Anuais
+Query voltara a entender como os anos se compartaram referente ao fechamento, buscando a diferença entre o máximo e o mínimo.
+
+```sql
+SELECT 
+    EXTRACT(YEAR FROM data) AS ano, 
+    MAX(fechamento) AS max_fechamento,
+    MIN(fechamento) AS min_fechamento,
+    ROUND(((MAX(fechamento) - MIN(fechamento)) / MAX(fechamento) * 100)::numeric, 2) AS dif_total
+FROM toyota_stock
+GROUP BY ano
+ORDER BY ano;
+```
+## Volatilidade Mensal
+Query onde busco a volatilidade baseado no mês anterior, nessa query notamos a baixa volatilidade nos fechamentos, onde a maior difereça de um mês para o outro foi de 0.074 (7,4%)
+
+```sql
+WITH dados AS (
+    SELECT 
+        data,
+        fechamento,
+        LAG(fechamento) OVER (PARTITION BY DATE_TRUNC('month', data) ORDER BY data) AS lag_fechamento,
+        DATE_TRUNC('month', data) AS mes
+    FROM toyota_stock
+)
+SELECT 
+    mes,
+    STDDEV((fechamento - lag_fechamento) / lag_fechamento) AS volatilidade
+FROM dados
+WHERE lag_fechamento IS NOT NULL
+GROUP BY mes
+ORDER BY volatilidade DESC;
+```
