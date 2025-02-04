@@ -1,5 +1,5 @@
 # Query
-## Súmario
+## Sumário
 [1 - Gráfico de controle](#Gráfico-de-controle)
 
 [2 - Performance Anual e Mensal](#Performance-Anual-e-Mensal)
