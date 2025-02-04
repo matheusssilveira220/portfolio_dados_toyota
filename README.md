@@ -92,16 +92,21 @@ Os objetivos, juntando o fluxo + escopo, estão no arquivo [objetivos_toyota](ht
 
 ## Etapas
 
-### Python <img alt="Python" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Python.svg">
+### Python
+<img alt="Python" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Python.svg">
 
 Fiz a coleta dos dados utilizando o API do Kaggle, após isso realizei a análise exploratoria e o tratamento nos dados. Com isso chegava a etapa de conectar ao banco de dados, fiz isso utilizando a biblioteca **sqlalchemy**, biblioteca voltada a integração de Python - SQL. A própria plataforma da **Supabase** nos oferece os codigos necessários para realizar essa importação dos dados ao banco de dados.
 
 No arquivo [toyota](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/toyota.ipynb) vocês encontram os notebooks criados utilizando o **JupyterLab**.
 
-### SQL <img alt="SQL" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Postgresql.svg">
+### SQL
+<img alt="SQL" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Postgresql.svg">
 
 Utilizei a plataforma da **Supabase** para hospedagem do meu banco de dados, com a ferramenta **DBeaver** como ferramenta visual para operarmos as queries futuramente. O SGBD que utilizei é o **PostgreSQL**. Dessa forma tenho todo suporte necessário para começar minhas análises dentro do SQL.
 
-### PowerBI <img alt="PowerBI" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Power%20BI.svg">
+Podem conferir meu trabalho utilizando o SQL na pasta [queries](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/queries.md)
+
+### PowerBI
+<img alt="PowerBI" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Power%20BI.svg">
 
 O [Dashboard PowerBI](https://app.powerbi.com/view?r=eyJrIjoiNWY1ZjAwZDktMDA3MC00OTUwLThiZDgtNjc0NGMyMzY1NzQyIiwidCI6IjljMTdjMzNhLWJhMGItNDM0MS04ZjI5LTZjYWVkYjAxN2NhMyJ9&pageName=a246d69471eb9602b248) pode ser visto nesse link destacado.
