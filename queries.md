@@ -1,4 +1,9 @@
 # Query
+## Súmario
+[1 - Gráfico de controle](#Gráfico-de-controle)
+[2 - Performance Anual e Mensal](#Performance-Anual-e-Mensal)
+[3 - Máximos e Mínimos Anuais](#Máximos-e-Mínimos-Anuais)
+[4 - Volatilidade Mensal](#Volatilidade-Mensal)
 ## Gráfico de Controle
 Nessa query busco montar o gráfico de controle referente aos valores de Alta e Baixa do período de 2024 a 2020, encontrando o percentual de alteração entre eles.
 
