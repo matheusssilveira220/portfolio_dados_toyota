@@ -1,6 +1,8 @@
 # Query
 ## Gráfico de Controle
-Nessa query busco montar o gráfico de controle referente aos valores de Alta e Baixa do período de 2024 a 2020, encontrando o percentual de alteração entre eles. 
+Nessa query busco montar o gráfico de controle referente aos valores de Alta e Baixa do período de 2024 a 2020, encontrando o percentual de alteração entre eles.
+
+A intenção do gráfico é encontrar pontos de sazonlidade e alterações bruscas nos valores apresentados.
 
 
 ```sql
