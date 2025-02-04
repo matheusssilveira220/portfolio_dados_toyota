@@ -9,17 +9,17 @@ O objetivo deste projeto é criar e analisar um Gráfico de Controle para identi
 Link do Kaggle: [Toyota Motors Stock Data (1980-2024)](https://www.kaggle.com/datasets/mhassansaboor/toyota-motors-stock-data-2980-2024)
 
 ## Sumário
-1 - [Como rodar o projeto](#Como-rodar-o-projeto)
+[1 - Como rodar o projeto](#Como-rodar-o-projeto)
 
-2 - [Resumo](#Resumo)
+[2 - Resumo](#Resumo)
 
-3 - [Etapas](#Etapas)
+[3 - Etapas](#Etapas)
 
-    3.1 - [Python](#Python)
+[3.1 - Python](#Python)
 
-    3.2 - [SQL](#SQL)
+[3.2 - SQL](#SQL)
 
-    3.3 - [PowerBI](#PowerBI)
+[3.3 - PowerBI](#PowerBI)
 
 ## Como rodar o projeto
 
