@@ -65,6 +65,8 @@ ORDER BY a.dt;
 ## Performance Anual e Mensal
 A intensão dessa query é encontrar anos e meses com positividade e negatividade, considerando o fechamento, ou seja caso fechamento > fechamento anterior = 1. Dessa forma conseguimos encontrar os anos e meses com maior taxa de positividade de um periodo ao outro. A query é a mesma nos dois casos, apenas alterar MONTH por YEAR e mes por ano.
 
+Com isso encontramos também uma tendência de queda ou alta nas ações, baseado nos dados historicos.
+
 ```sql
 WITH dados AS (
     SELECT 
