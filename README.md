@@ -1,11 +1,20 @@
 # [Ver outros projetos](https://github.com/matheusssilveira220/portfolio_dados)
 ---
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 # Toyota Prices
 
-## Introdução
+## Apresentação
 O objetivo deste projeto é criar e analisar um Gráfico de Controle para identificar padrões de desempenho e apresentá-los em um dashboard interativo.
 
 Link do Kaggle: [Toyota Motors Stock Data (1980-2024)](https://www.kaggle.com/datasets/mhassansaboor/toyota-motors-stock-data-2980-2024)
+
+## Sumário
+1 - [Como rodar o projeto](#Como-rodar-o-projeto);
+2 - [Resumo](#Resumo);
+3 - [Etapas](#Etapas)
+3.1 - [Python](#Python)
+3.2 - [SQL](#SQL)
+3.3 - [PowerBI](#PowerBI)
 
 ## Como rodar o projeto
 
