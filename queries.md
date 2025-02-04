@@ -68,6 +68,7 @@ A intensão dessa query é encontrar anos e meses com positividade e negatividad
 Com isso encontramos também uma tendência de queda ou alta nas ações, baseado nos dados historicos.
 
 ```sql
+-- Prepara os dados brutos com informações da data anterior
 WITH dados AS (
     SELECT 
         data,
@@ -76,6 +77,7 @@ WITH dados AS (
         EXTRACT(month FROM data) AS mes -->Altere month para year, e tera o resultado anual, o Alias é interessante mudar para ano
     FROM toyota_stock
 ),
+-- Classifica cada data como alta/baixa.
 contagem_dias AS (
     SELECT 
         mes, --> Alterar para ano
@@ -85,6 +87,7 @@ contagem_dias AS (
         CASE WHEN fechamento < lag_fechamento THEN 1 ELSE 0 END AS baixa
     FROM dados
 )
+-- Select final com tudo junto.
 SELECT 
     mes, --> Alterar para ano
     SUM(alta) AS total_dias_alta,
