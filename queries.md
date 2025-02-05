@@ -10,6 +10,8 @@ Aqui encontrará todas as queries que importei ao Power BI para criar a visualiz
 
 [4 - Volatilidade Mensal](#Volatilidade-Mensal)
 
+[5 - Intervalo Baseado em Percentis](#Intervalo-Baseado-em-Percentis)
+
 ## Gráfico de Controle
 Nessa query busco montar o gráfico de controle referente aos valores de Alta e Baixa do período de 2020 a 2024, encontrando o percentual de alteração entre eles.
 
