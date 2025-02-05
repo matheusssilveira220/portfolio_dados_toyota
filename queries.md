@@ -143,3 +143,42 @@ WHERE lag_fechamento IS NOT NULL
 GROUP BY mes
 ORDER BY volatilidade DESC;
 ```
+## Intervalo Baseado em Percentis
+Query buscando a diferença percentual anual, e os separando em quartis para analisarmos. Servindo como um apoio as queries anteriores, essa nos mostra que as ações da Toyota tem uma variação baixissima de periodo para periodo.
+
+```sql
+WITH dados_anuais AS (
+    SELECT 
+        EXTRACT(YEAR FROM data) AS ano,
+        MAX(fechamento) AS max_fechamento,
+        MIN(fechamento) AS min_fechamento,
+        ROUND(
+            ((MAX(fechamento::numeric) - MIN(fechamento::numeric)) / MAX(fechamento::numeric)) * 100, 
+            2
+        ) AS dif_total
+    FROM toyota_stock
+    GROUP BY ano
+),
+percentis AS (
+    SELECT 
+        PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY dif_total) AS p25,
+        PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY dif_total) AS p50,
+        PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY dif_total) AS p75,
+        PERCENTILE_CONT(1.0) WITHIN GROUP (ORDER BY dif_total) AS p100
+    FROM dados_anuais
+),
+intervalos AS (
+    SELECT 
+        CASE
+            WHEN dif_total <= p25 THEN '0% a 25%'
+            WHEN dif_total <= p50 THEN '25% a 50%'
+            WHEN dif_total <= p75 THEN '50% a 75%'
+            ELSE '75% a 100%'
+        END AS faixa_diferenca,
+        COUNT(*) AS frequencia
+    FROM dados_anuais, percentis
+    GROUP BY faixa_diferenca
+    ORDER BY faixa_diferenca
+)
+SELECT * FROM intervalos;
+```
