@@ -1,4 +1,6 @@
 # Query
+Aqui encontrará todas as queries que importei ao Power BI para criar a visualização do Dashboard.
+
 ## Sumário
 [1 - Gráfico de controle](#Gráfico-de-controle)
 
