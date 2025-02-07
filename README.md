@@ -111,4 +111,6 @@ Essas queries presentes na pasta, foram importadas ao PowerBI via conexão OBDC.
 ### PowerBI
 <img alt="PowerBI" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Power%20BI.svg">
 
+Nesse [dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2QyODkyMmQtMGJkYS00YWIxLWI5MGUtYTc1OTJhMDk5Njg4IiwidCI6IjljMTdjMzNhLWJhMGItNDM0MS04ZjI5LTZjYWVkYjAxN2NhMyJ9&embedImagePlaceholder=true&pageName=62e01d7401708ac3e897), você confere os gráficos e matrizes construidos com base nas queries. Esses gráficos estão melhor explicados e comentados na pasta ...
+
 Ainda em construção...
