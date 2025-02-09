@@ -4,9 +4,21 @@
 # Toyota Prices
 
 ## Apresentação
-O objetivo deste projeto é criar e analisar um Gráfico de Controle para identificar padrões de desempenho e apresentá-los em um dashboard interativo.
+O objetivo deste projeto é criar e analisar um Gráfico de Controle para identificar padrões de desempenho e sazonalidades.
 
 Link do Kaggle: [Toyota Motors Stock Data (1980-2024)](https://www.kaggle.com/datasets/mhassansaboor/toyota-motors-stock-data-2980-2024)
+
+## Ferramentas
+
+*Python*
+
+*SQL*
+
+*Supabase*
+
+*DBeaver*
+
+*PowerBI*
 
 ## Sumário
 [1 - Como rodar o projeto](#Como-rodar-o-projeto)
