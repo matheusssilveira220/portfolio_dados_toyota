@@ -111,6 +111,8 @@ Essas queries presentes na pasta, foram importadas ao PowerBI via conexão OBDC.
 ### PowerBI
 <img alt="PowerBI" height="30" width="30" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Power%20BI.svg">
 
-Nesse [dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2QyODkyMmQtMGJkYS00YWIxLWI5MGUtYTc1OTJhMDk5Njg4IiwidCI6IjljMTdjMzNhLWJhMGItNDM0MS04ZjI5LTZjYWVkYjAxN2NhMyJ9&embedImagePlaceholder=true&pageName=62e01d7401708ac3e897), você confere os gráficos e matrizes construidos com base nas queries. Esses gráficos estão melhor explicados e comentados na pasta ...
+Nesse [dashboard](https://app.powerbi.com/reportEmbed?reportId=70190557-67e7-4f66-bde9-e6bf85cb72ba&autoAuth=true&ctid=9c17c33a-ba0b-4341-8f29-6caedb017ca3), você confere os gráficos e matrizes construidos com base nas queries.
 
-Ainda em construção...
+### Relatório Final.
+
+Nessa etapa entrego todos os insights dentro do trabalho realizado. Pode ser visto no arquivo [relatório final](https://github.com/matheusssilveira220/portfolio_dados_toyota/blob/main/Relat%C3%B3rio%20Final.docx).
